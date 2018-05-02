@@ -1,0 +1,30 @@
+A fractal is a natural phenomenon or a mathematical set that exhibits a repeating pattern that displays at every scale. It is also known as expanding symmetry or evolving symmetry. If the replication is exactly the same at every scale, it is called a self-similar pattern. Fractals can also be nearly the same at different levels.Fractals also include the idea of a detailed pattern that repeats itself
+
+*source = https://en.wikipedia.org/wiki/Fractal
+1 - Julia
+
+The Julia set is named after the French mathematician Gaston Julia who investigated their properties circa 1915 and culminated in his famous paper in 1918. While the Julia set is now associated with a simpler polynomial, Julia was interested in the iterative properties of a more general expression, namely z4 + z3/(z-1) + z2/(z3 + 4 z2 + 5) + c.
+
+The Julia set is now associated with those points z = x + iy on the complex plane for which the series zn+1 = zn2 + c does not tend to infinity. c is a complex constant, one gets a different Julia set for each c. The initial value z0 for the series is each point in the image plane. In the broader sense the exact form of the iterated function may be anything, the general form being zn+1 = f(zn), interesting sets arise with nonlinear functions f(z). Commonly used functions include the following: 
+					zn+1 = c sin(zn)	zn+1 = c exp(zn)
+					zn+1 = c i cos(zn)	zn+1 = c zn (1 - zn)
+*source = http://paulbourke.net/fractals/juliaset/
+
+2 - Mandelbrot
+
+The Mandelbrot set is the set of complex numbers c for which the function f(z)=z²+c does not diverge when iterated, i.e., for which the sequence f(0), f(f(0)), etc., remains bounded.
+The set is closely related to Julia sets (which produce similarly complex shapes). Its definition and its name is the work of Adrien Douady, in tribute to the mathematician Benoit Mandelbrot.
+Mandelbrot set images are made by sampling complex numbers and determining for each whether the result tends towards infinity when a particular mathematical operation is iterated on it. Treating the real and imaginary parts of each number as image coordinates, pixels are colored according to how rapidly the sequence diverges, if at all.
+More precisely, the Mandelbrot set is the set of values of c in the complex plane for which the orbit of 0 under iteration of the quadratic map,
+
+								z_{n+1}=z_n^2+c,
+*source = https://en.wikipedia.org/wiki/Mandelbrot_set
+
+3 - Burning ship
+
+The iteration formula for the Burning Ship fractal looks like this:
+									z0=0z0=0
+				zn+1=(|ℜ(zn)|+i|ℑ(zn)|)2+czn+1=(|ℜ(zn)|+i|ℑ(zn)|)2+c
+As you can see, it's very similar to the formula for the Mandelbrot set. The only difference is that the real and imaginary parts of zz are always kept positive using absolute values. However, the fractal itself is very different.
+
+*source = http://blog.komar.be/burning-ship/
